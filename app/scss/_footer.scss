@@ -1,0 +1,19 @@
+.footer {
+    margin-top: auto;
+
+    .socials {
+        margin: toRem(40px) auto ;
+        // margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        
+        svg {
+            width: toRem(28px);
+            height: toRem(28px);
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: toRem(6px);
+        }
+    }
+}

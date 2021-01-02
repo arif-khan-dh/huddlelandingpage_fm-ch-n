@@ -21,4 +21,26 @@ body {
     color: white;
     text-align: center;
 
+    display: flex;
+}
+
+.main-bg {
+    width: 100%;
+    min-width: 300px;
+    background-image: url(../../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.container {
+    min-width: toRem(360px);
+    width: 70%;
+    padding: 0 toRem(40px) 0;
+    display: flex;
+    flex-flow: column nowrap;
 }
