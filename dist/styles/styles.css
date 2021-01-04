@@ -43,7 +43,7 @@ body {
 @media (min-width: 45rem) {
   .main-bg {
     background-image: url(../../images/bg-desktop.svg);
-    background-size: contain;
+    background-size: cover;
   }
 }
 

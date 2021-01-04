@@ -35,7 +35,7 @@ body {
     @include breakpoint-up(medium) {
         background-image: url(../../images/bg-desktop.svg);
         // background-position: lef;
-        background-size: contain;
+        background-size: cover;
         
     }
 
