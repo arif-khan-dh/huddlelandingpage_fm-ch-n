@@ -40,6 +40,13 @@ body {
           justify-content: center;
 }
 
+@media (min-width: 45rem) {
+  .main-bg {
+    background-image: url(../../images/bg-desktop.svg);
+    background-size: contain;
+  }
+}
+
 .container {
   min-width: 22.5rem;
   width: 70%;
@@ -53,6 +60,25 @@ body {
           flex-flow: column nowrap;
 }
 
+@media (min-width: 45rem) {
+  .container {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 64.375rem) {
+  .container {
+    width: 85%;
+  }
+}
+
+@media (min-width: 83.75rem) {
+  .container {
+    width: 71.0625rem;
+  }
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +89,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 8.5%;
+  height: 4.375rem;
 }
 
 .header .logo {
@@ -74,19 +100,80 @@ body {
   padding: 2.5rem 0;
 }
 
+@media (min-width: 32.75rem) {
+  .content_hero {
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (min-width: 45rem) {
+  .content_hero {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 160px;
+            flex: 1 1 160px;
+    padding-top: 0px;
+  }
+}
+
 .content_hero img {
   width: 100%;
   display: block;
+}
+
+@media (min-width: 45rem) {
+  .content_cta {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    padding-left: 1.75rem;
+  }
+}
+
+@media (min-width: 64.375rem) {
+  .content_cta {
+    padding-left: 2.375rem;
+  }
+}
+
+@media (min-width: 83.75rem) {
+  .content_cta {
+    padding-left: 3rem;
+  }
 }
 
 .content_cta .text {
   padding: 1.25rem 0.75rem;
 }
 
+@media (min-width: 45rem) {
+  .content_cta .text {
+    text-align: left;
+    padding: 1.25rem 0px 0.75rem;
+  }
+}
+
+@media (min-width: 64.375rem) {
+  .content_cta .text {
+    padding-top: 3.75rem;
+  }
+}
+
 .content_cta .text .title {
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+@media (min-width: 45rem) {
+  .content_cta .text .title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 64.375rem) {
+  .content_cta .text .title {
+    font-size: 1.75rem;
+  }
 }
 
 .content_cta .text .subtitle {
@@ -96,6 +183,7 @@ body {
 }
 
 .content_cta .btn {
+  cursor: pointer;
   font-family: "Poppins", sans-serif;
   background-color: white;
   color: #674baf;
@@ -107,21 +195,71 @@ body {
   border-radius: 1.25rem;
   -webkit-box-shadow: 0 2px 4px rgba(56, 54, 54, 0.9);
           box-shadow: 0 2px 4px rgba(56, 54, 54, 0.9);
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+}
+
+@media (min-width: 45rem) {
+  .content_cta .btn {
+    margin-left: 0px;
+    margin-bottom: 0px;
+    line-height: 3em;
+    width: 50%;
+  }
+}
+
+@media (min-width: 64.375rem) {
+  .content_cta .btn {
+    width: 40%;
+  }
+}
+
+.content_cta .btn:hover {
+  background-color: #e882e8;
+}
+
+@media (min-width: 45rem) {
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 3rem;
+  }
 }
 
 .footer {
-  margin-top: auto;
+  margin-top: 3.125rem;
+}
+
+@media (min-width: 64.375rem) {
+  .footer {
+    margin-top: 0px;
+  }
 }
 
 .footer .socials {
-  margin: 2.5rem auto;
-  width: 50%;
+  margin: 0px auto;
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 32.75rem) {
+  .footer .socials {
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 7.5rem;
+  }
+}
+
+@media (min-width: 45rem) {
+  .footer .socials {
+    float: right;
+  }
 }
 
 .footer .socials svg {
@@ -130,5 +268,21 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   padding: 0.375rem;
+  cursor: pointer;
+  -webkit-transition: border-color 200ms ease-in-out;
+  transition: border-color 200ms ease-in-out;
+}
+
+.footer .socials svg:hover {
+  border-color: #e882e8;
+}
+
+.footer .socials svg path {
+  -webkit-transition: fill 200ms ease-in-out;
+  transition: fill 200ms ease-in-out;
+}
+
+.footer .socials svg:hover path {
+  fill: #e882e8;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -2,6 +2,15 @@
      padding: toRem(40px) 0;
     // padding-top: toRem(40px);
 
+    @include breakpoint-up(small) {
+        padding-bottom: toRem(20px);
+    }
+
+    @include breakpoint-up(medium) {
+        flex: 1 1 160px;
+        padding-top: 0px;
+    }
+
     img {
         width: 100%;
         display: block;

@@ -3,5 +3,10 @@
 
 // height - 76.25% of container (800px)
 .content {
-    // height: 76.25%;
+
+    @include breakpoint-up(medium) {
+        display: flex;
+        padding-top: toRem(48px);
+    }
+    
 }

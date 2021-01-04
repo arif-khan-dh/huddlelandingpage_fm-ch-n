@@ -1,14 +1,48 @@
 .content_cta {
 
+    @include breakpoint-up(medium) {
+        flex: 1 1 0px;
+        padding-left: toRem(28px);
+    }
+
+    @include breakpoint-up(large) {
+        padding-left: toRem(38px);
+    }
+
+    @include breakpoint-up(xlarge) {
+        padding-left: toRem(48px);
+    }
 
     .text {
         padding: toRem(20px) toRem(12px);
+
+        @include breakpoint-up(small) {
+            
+        }
+
+        @include breakpoint-up(medium) {
+            text-align: left;
+            padding: toRem(20px) 0px toRem(12px);
+        }
+
+        @include breakpoint-up(large) {
+            padding-top: toRem(60px);
+        }
 
 
         .title {
             font-family: "Poppins", sans-serif;
             font-size: $font-lg;
             font-weight: 700;
+
+
+            @include breakpoint-up(medium) {
+                font-size: $font-lg;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: $font-xxlg;
+            }
         }
 
         .subtitle {
@@ -19,16 +53,32 @@
     }
 
     .btn {
+        cursor: pointer;
         font-family: "Poppins", sans-serif;
         background-color: white;
         color: $violet;
         font-size: $font-xxsm;
         width: 55%;
-        // height: toRem();
         line-height: 2.3em;
         margin: 0 auto toRem(5px);
         padding: toRem(4px) 0;
         border-radius: toRem(20px);
         box-shadow: 0 2px 4px rgba($color: #383636, $alpha: 0.9);
+        transition: background-color 200ms ease-in-out;
+
+        @include breakpoint-up(medium) {
+            margin-left: 0px;
+            margin-bottom: 0px;
+            line-height: 3em;
+            width: 50%;
+        }
+
+        @include breakpoint-up(large) {
+            width: 40%;
+        }
+
+        &:hover {
+            background-color: $softMegenta;
+        }
     }
 }

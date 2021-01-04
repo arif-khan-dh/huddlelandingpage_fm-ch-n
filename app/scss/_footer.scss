@@ -1,12 +1,27 @@
 .footer {
-    margin-top: auto;
+    margin-top: toRem(50px);
+
+
+    @include breakpoint-up(large) {
+        margin-top: 0px;
+    }
 
     .socials {
-        margin: toRem(40px) auto ;
-        // margin: 0 auto;
-        width: 50%;
+        margin: 0px auto ;
+        width: 40%;
+        
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+
+        @include breakpoint-up(small) {
+            margin-top: 0;
+            margin-bottom: 0;
+            max-width: toRem(120px);
+        }
+
+        @include breakpoint-up(medium) {
+            float: right;
+        }
         
         svg {
             width: toRem(28px);
@@ -14,6 +29,20 @@
             border: 1px solid white;
             border-radius: 50%;
             padding: toRem(6px);
+            cursor: pointer;
+            transition: border-color 200ms ease-in-out;
+
+            &:hover {
+                border-color: $softMegenta;
+            }
+
+            path {
+                transition: fill 200ms ease-in-out;
+            }
+
+            &:hover path{
+                fill: $softMegenta;
+            }
         }
     }
 }
