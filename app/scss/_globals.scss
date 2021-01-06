@@ -34,7 +34,6 @@ body {
 
     @include breakpoint-up(medium) {
         background-image: url(../../images/bg-desktop.svg);
-        // background-position: lef;
         background-size: cover;
         
     }
@@ -50,6 +49,7 @@ body {
     padding: 0 toRem(40px) 0;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
 
     @include breakpoint-up(medium) {
         width: 90%;

@@ -14,7 +14,7 @@
     }
 
     .text {
-        padding: toRem(20px) toRem(12px);
+        padding-top: toRem(20px);
 
         @include breakpoint-up(small) {
             
